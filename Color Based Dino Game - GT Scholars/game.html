@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enhanced Dino Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="character-select">
+    <h2>Select Your Dino</h2>
+    <div class="dino-options">
+      <div class="dino" data-dino="trex" style="background-color: gray;">T-Rex - <img src="./src/Dino-C.png" width="150px" height="150px"/></div>
+      <div class="dino" data-dino="raptor" style="background-color: purple;">Raptor - <img src="./src/raptor.png" width="150px" height="150px"/></div>
+      <div class="dino" data-dino="brachio" style="background-color: green;">Brachio - <img src="./src/Brachio.png" width="150px" height="150px"/></div>
+      <div class="dino" data-dino="ptero" style="background-color: orange;">Ptero - <img src="./src/ptero copy.png" width="150px" height="150px"/></div>
+    </div>
+  </div>
+
+  <div id="starting-message" class="hide" style="margin-top:10px;">Starting Game...</div>
+  <div id="game-over" class="game-hide" style="font-size:larger;font-weight:bold;color:red
+  ">Game Over!<p id="score"></p></div>
+  <div id="btn-div" class="btn-div">
+  <button id="btn" class="btn-hide">Start Again!!</button>
+  </div>
+  <div id="level-up-message" class="hide level-up">LEVEL 2!</div>
+  <div id="game-container" class="hidden">
+    <canvas id="game" width="800" height="200"></canvas>
+    <p id="scores">Score: 0</p>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
